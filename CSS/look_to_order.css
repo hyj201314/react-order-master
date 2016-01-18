@@ -1,4 +1,4 @@
-.show_order{
+.show-order{
     color:white;
     text-align:center;
     background:black;
@@ -9,7 +9,7 @@
     line-height: 60px;
     font-size: 23px;
 }
-.back{
+.show-back{
     text-align:left;
     height: 30px;
     color: white;
@@ -23,7 +23,7 @@
     float: left;
     margin-top: 20px;
 }
-.order_meal{
+.show-order-meal{
     display: block;
     clear: both;
     top: 50px;
@@ -35,7 +35,7 @@
     font-size: 18px;
     line-height: 35px;
 }
-.no_order_meal{
+.no-order-meal{
     top: 50px;
     width: 100%;
     height: 35px;
@@ -45,7 +45,7 @@
     font-size: 18px;
     line-height: 35px;
 }
-.order_meal_list{
+.order-meal-list{
     display: block;
     clear:both;
     border-top: 1px solid #fff;
@@ -57,7 +57,7 @@
     height: 70px;
     margin-top: 0;
 }
-.name{
+.show-name{
     font-size: 20px;
     font-weight: bold;
     line-height: 40px;
@@ -66,7 +66,7 @@
     list-style:none;
     text-decoration:none;
 }
-.set_meal{
+.set-meal{
     font-family: 黑体;
     font-size: 15px;
     height: 20px;
@@ -85,7 +85,7 @@
     list-style:none;
     text-decoration:none;
 }
-.no_order_name{
+.no-order-name{
     border-top: 1px solid #fff;
     border-bottom: 1px solid #ccc;
     padding-left: 10px;
@@ -98,7 +98,7 @@
     height: 65px;
     line-height: 65px;
 }
-.all_subtotal{
+.all-subtotal{
     font-family: 黑体;
     font-size: 18px;
     margin-top: 15px;

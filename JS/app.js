@@ -1,19 +1,18 @@
 /**
  * Created by hanyajie on 16-1-7.
  */
-var React = require('react');
-var Router = require('react-router');
-var ReactDom = require('react-dom');
-var Route = Router.Route;
-var Main = require('./JS/main')
-var HelpToOrder = require('./JS/help-to-order');
-var route = (
+var ReactRouter = window.ReactRouter;
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var routes = (
     <Router>
-        <IndexRoute component={Main}>
-        <Route path="../HTML/help_to_order.html" component={HelpToOrder}/>
-    </Router>
-)
-//ReactRouter.run(routes, function (Handler, state) {
-//    React.render(<Handler/>, document.body);
-//});
+    <Route path="/" component={window.Main}/>
+<Route path="help_to_order" component={window.HelpToOrder}/>
+<Route path="look_to_order" component={window.LookToOrder}/>
+<Route path="choose_person" component={window.ChoosePersonName}/>
+<Route path="choose_restaurant" component={window.ChooseRestaurantName}/>
+<Route path="choose_meal" component={window.ChooseMeal}/>
+</Router>
+);
+ReactDOM.render(routes, document.getElementById('root'));
 

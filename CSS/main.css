@@ -9,7 +9,7 @@
     line-height: 60px;
     font-size: 23px;
 }
-.help_order_button{
+.help-order-button{
     margin-top: 30px;
     color:black;
     text-align:center;
@@ -23,11 +23,12 @@
     margin-right: 10px;
     cursor: pointer;
     line-height: 50px;
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
 }
-div .help_order_button:hover{
-    background: rgba(179, 179, 110, 0.5);
+div.help-order-button:hover{
+    background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
-.look_order_button{
+.look-order-button{
     color:black;
     text-align:center;
     cursor: pointer;
@@ -40,9 +41,10 @@ div .help_order_button:hover{
     width: 98%;
     margin-left: 10px;
     margin-right: 10px;
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
 }
-div.look_order_button:hover {
-    background: rgba(179, 179, 110, 0.5);
+div.look-order-button:hover {
+    background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
 body{
     display: block;
