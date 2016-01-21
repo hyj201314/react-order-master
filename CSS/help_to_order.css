@@ -25,13 +25,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-div.person{
-    color:inherit;
+.person{
+    padding-left: 10px;
+    color: black;
     font-size: 18px;
-    margin-top: 10px;
     font-weight: bold;
     line-height: 20px;
-    margin-bottom:10px;
 }
 .input-name{
     margin-bottom: 20px;
@@ -58,13 +57,13 @@ div.person{
     min-height: 20px;
     background-image: linear-gradient(to bottom,#fff,#e6e6e6)
 }
-div.choose-person-button:hover{
+.choose-person-button:hover{
     background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
-div.restaurant{
-    color:black;
+.restaurant{
+    padding-left: 10px;
+    color: black;
     font-size: 18px;
-    margin: 10px;
     font-weight: bold;
     line-height: 20px;
 }
@@ -95,13 +94,13 @@ div.restaurant{
     min-height: 20px;
     background-image: linear-gradient(to bottom,#fff,#e6e6e6)
 }
-div.choose-restaurant-button:hover{
+.choose-restaurant-button:hover{
     background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
-div.meal{
-    color:black;
-    font-size:18px;
-    margin: 10px 0;
+.meal{
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
     font-weight: bold;
     line-height: 20px;
 }
@@ -131,9 +130,10 @@ div.meal{
     padding: 15px;
     border: 1px solid #ccc;
     min-height: 20px;
-    background-image: linear-gradient(to bottom,#fff,#e6e6e6)
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    width: 100%;
 }
-div.choose-meal-button:hover{
+.choose-meal-button:hover{
     background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
 .acknowledgement{
@@ -149,12 +149,16 @@ div.choose-meal-button:hover{
     padding: 15px;
     border: 1px solid #ccc;
     min-height: 20px;
-    background-image: linear-gradient(to bottom,#fff,#e6e6e6)
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    width: 100%;
 }
-div.acknowledgement:hover{
+.acknowledgement:hover{
     background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
 body{
     display: block;
     margin: 0;
+}
+input[type="button"]:disabled{
+    background: gainsboro;
 }

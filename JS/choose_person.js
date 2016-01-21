@@ -21,22 +21,22 @@ window.ChoosePersonName = React.createClass({
             }
         })
     },
-    handleClick: function(list) {
-        localStorage.setItem("person",list);
-        this.props.history.pushState(null, '/help_to_order')
+    handleClick: function(name) {
+        localStorage.setItem("person",name);
+        this.props.history.pushState(null, '/help_to_order');
     },
     render: function() {
-        {var name = _.map(this.state.persons,function(list) {
+        var name_list = _.map(this.state.persons,function(name) {
             return (
               <div>
-                  <li className="name" onClick={this.handleClick.bind(this,list)}>{list}</li>
+                  <li className="name" onClick={this.handleClick.bind(this,name)}>{name}</li>
               </div>
             )
-        }, this)}
+        }, this)
         return (
             <div>
                 <div className="choose-person">选人</div>
-                {name}
+                {name_list}
             </div>
         );
     }

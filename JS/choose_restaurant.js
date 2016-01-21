@@ -22,20 +22,20 @@ window.ChooseRestaurantName = React.createClass({
     },
     handleClick: function(list) {
         localStorage.setItem("restaurant",list);
-        this.props.history.pushState(null, '/help_to_order')
+        this.props.history.pushState(null, '/help_to_order');
     },
     render: function() {
-        {var name = _.map(this.state.restaurants,function(list){
+        var restaurant_name_list = _.map(this.state.restaurants,function(name) {
             return (
                 <div>
-                    <li className = "name" onClick={this.handleClick.bind(this,list)}>{list}</li>
+                    <li className = "name" onClick={this.handleClick.bind(this,name)}>{name}</li>
                 </div>
             )
-        }, this)}
+        }, this)
         return (
             <div>
                 <div className = "choose-restaurant">选餐厅</div>
-                {name}
+                {restaurant_name_list}
             </div>
         )
     }

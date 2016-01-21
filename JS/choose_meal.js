@@ -9,7 +9,6 @@ window.ChooseMeal = React .createClass({
     },
     componentDidMount: function() {
         var self = this;
-        var ref = this;
         $.ajax({
             url: "../DATA/meal_storage.json",
             dataType: "json",
@@ -24,21 +23,20 @@ window.ChooseMeal = React .createClass({
     handleClick: function(meal,money) {
         localStorage.setItem("meal",meal);
         localStorage.setItem("money",money);
-        this.props.history.pushState(null, '/help_to_order')
+        this.props.history.pushState(null, '/help_to_order');
     },
     render: function() {
-        {var name = _.map(this.state.meals,function(list){
+        var meal_name_list = _.map(this.state.meals,function(item){
             return (
                     <div>
-                        <li className = "name" onClick={this.handleClick.bind(this,list.meal,list.money)}>{list.meal}
-                        <p className = "money">{list.money}</p></li>
+                        <li className = "name" onClick={this.handleClick.bind(this,item.meal,item.money)}>{item.meal}<p className = "money">{item.money}</p></li>
                     </div>
-                )
-        },this)}
+            )
+        },this)
         return (
             <div>
                 <div className = "choose-meal">选套餐</div>
-                {name}
+                {meal_name_list}
             </div>
         )
     }

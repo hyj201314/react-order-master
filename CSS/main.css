@@ -25,7 +25,7 @@
     line-height: 50px;
     background-image: linear-gradient(to bottom,#fff,#e6e6e6);
 }
-div.help-order-button:hover{
+.help-order-button:hover{
     background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
 .look-order-button{
@@ -43,7 +43,7 @@ div.help-order-button:hover{
     margin-right: 10px;
     background-image: linear-gradient(to bottom,#fff,#e6e6e6);
 }
-div.look-order-button:hover {
+.look-order-button:hover {
     background: linear-gradient(to bottom,#fff,#DEDEDE);
 }
 body{

@@ -29,15 +29,15 @@ window.LookToOrder  = React.createClass({
     },
     render: function() {
         var order_person = [];
-        var order_person_list = _.map(this.state.all_set_meals,function(list) {
-            if (order_person.indexOf(list.person) == -1) {
-                order_person.push(list.person);
+        var order_person_list = _.map(this.state.all_set_meals,function(item) {
+            if (order_person.indexOf(item.person) == -1) {
+                order_person.push(item.person);
             }
-            var color = (list.money.substring(1, list.money.length) > 12.00) ? 'red':"black";
+            var color = (item.money.substring(1, item.money.length) > 12.00) ? 'red':"black";
             return (
                 <div>
-                    <li className="order-meal-list"><p className="show-name">{list.person}</p><p className="set-meal">{list.restaurant+" "+list.meal}
-                    </p><span className="price" id="price_id" style={{color: color}}>{list.money}</span></li>
+                    <li className="order-meal-list"><p className="show-name">{item.person}</p><p className="set-meal">{item.restaurant+" "+item.meal}
+                    </p><span className="price" id="price_id" style={{color: color}}>{item.money}</span></li>
                 </div>
             )
         });
